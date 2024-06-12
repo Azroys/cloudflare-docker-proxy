@@ -4,7 +4,8 @@ addEventListener("fetch", (event) => {
 });
 
 const routes = {
-  "cloudflare-docker-proxy.azroys.workers.dev/": "https://registry-1.docker.io",
+  "docker.osspace.cn": "https://registry-1.docker.io",
+  "ghcr.osspace.cn": "https://ghcr.io",
 };
 
 function routeByHosts(host) {
