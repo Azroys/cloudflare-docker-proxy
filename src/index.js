@@ -4,13 +4,7 @@ addEventListener("fetch", (event) => {
 });
 
 const routes = {
-  "docker.osspace.cn": "https://registry-1.docker.io",
-  "quay.osspace.cn": "https://quay.io",
-  "gcr.osspace.cn": "https://gcr.io",
-  "k8s-gcr.osspace.cn": "https://k8s.gcr.io",
-  "k8s.osspace.cn": "https://registry.k8s.io",
-  "ghcr.osspace.cn": "https://ghcr.io",
-  "cloudsmith.osspace.cn": "https://docker.cloudsmith.io",
+  "${workername}.${username}.workers.dev/": "https://registry-1.docker.io",
 };
 
 function routeByHosts(host) {
