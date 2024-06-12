@@ -32,4 +32,6 @@
      "ghcr.libcuda.so": "https://ghcr.io",
    };
    ```
-
+- deploy this project to cloudflare workers
+- add `CNAME` **DNS record** of xxx.your-domain.com to the workers.dev domain, like this: `${workername}.${username}.workers.dev`
+- add `xxx.your-domain.com/*` to **HTTP routes of workers**. xxx is `docker` `quay` `gcr` ...
